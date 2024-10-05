@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bir Rəqəmin Rəqəmlərinin Cəmi</title>
+    </head>
+    <body>
+        <input id="inp" type="number" />
+        <p id="ntc"></p>
+
+        <script>
+            function go(){
+                const inpVal = document.querySelector("#inp").value 
+                let cem = 0
+
+                for (let i = inpVal; i > 0 ; i = Math.floor( i / 10)   ) {
+                   cem += i % 10
+                }
+
+                document.querySelector("#ntc").innerHTML = `Cem: ${cem}`
+            }
+
+            document.querySelector("#inp").addEventListener("input", go)
+        </script>
+    </body>
+</html>

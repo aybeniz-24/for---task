@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ededin factoriali</title>
+    </head>
+    <body>
+        <input type="number" id="inp" placeholder="eded daxil edin" />
+        <p id="ntc">Ededin factoriali: </p>
+
+        <script>
+            function go(){
+                const inpVal = parseInt(document.querySelector("#inp").value)
+                let hasil = 1
+                for (let i = 1; i <= inpVal; i++) {
+                    hasil *= i
+                }
+                document.querySelector("#ntc").innerHTML = "Hasil: " + hasil
+            }
+
+            document.querySelector("#inp").addEventListener('input', go)
+        </script>
+    </body>
+</html>

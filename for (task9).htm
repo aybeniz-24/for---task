@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verilmiş rəqəmlər aralığında tam kvadratlar tapmaq</title>
+    </head>
+    <body>
+        <p id="ntc"></p>
+        <script>
+            for (let i = 1; i <= 900; i++) {               
+                if( Math.sqrt(i) % 1 === 0){
+                    document.querySelector("#ntc").innerHTML += i + ', '
+                }                
+            }
+            document.querySelector("#ntc").innerHTML += '961'
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sadə Ədəd Tapma</title>
+    </head>
+    <body>
+        <p id="ntc"></p>
+
+        <script>
+            for (let i = 1; i <= 996; i++) {
+                let bolen = 0
+              for (let j = 1; j <= i; j++) {
+                if( i % j === 0){
+                    bolen++
+                }
+              }
+                   
+              if( bolen == 2 ){
+                document.querySelector("#ntc").innerHTML += i + ', '
+              }
+            }
+
+             document.querySelector("#ntc").innerHTML += '997'
+        </script>
+    </body>
+</html>

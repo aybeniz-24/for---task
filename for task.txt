@@ -1,0 +1,87 @@
+								for task
+
+
+
+#1. Rəqəmlərin Tərsi
+Verilmiş bir rəqəmin tərsini tapın.
+Verilən:
+Bir integer, məsələn, 12345.
+
+
+
+
+
+
+#2. Bir Rəqəmin Rəqəmlərinin Cəmi
+Verilmiş bir rəqəmin daxilindəki bütün rəqəmlərin cəmini tapın.
+Verilən:
+Məsələn, 456 üçün rəqəmlərin cəmi 4 + 5 + 6 = 15 olmalıdır.
+
+
+
+
+
+#3. Sadə Ədəd Tapma
+Verilmiş bir rəqəmin sadə ədəd olub-olmadığını tapın. Sadə ədəd yalnız 1-ə və özünə bölünən ədəd deməkdir.
+Verilən:
+Bir integer, məsələn, 29.
+
+
+
+#4. Fibonacci Seriyası
+Fibonacci seriyasını bir for dövrü istifadə edərək çap edin. Fibonacci seriyası, hər bir ədədi əvvəlki iki ədədin cəmi olaraq hesablamaqla başlayır: 0, 1, 1, 2, 3, 5, 8 və s.
+
+
+
+#5. İkilik Sisteminə Keçid
+Verilmiş bir ədədin ikilik sistemdəki nümayəndəsini çap edin. Bunun üçün for dövrü ilə ədədin bitlərini əldə edə bilərsiniz.
+
+
+
+
+#6. 1-dən N-ə qədər olan ədədlərin cəmini tapmaq
+Təsvir: İstifadəçidən N rəqəmini alın və 1-dən N-ə qədər olan ədədlərin cəmini hesablayın.
+
+
+
+
+
+#7. Ededin faktorialin apmaq
+Verilmis edede qeder butun reqemlerin hasili
+
+
+
+
+#8. Bir rəqəmin rəqəmlərinin hasilini tapmaq
+Təsvir: Verilən rəqəmin bütün rəqəmlərinin hasilini hesablayın. Məsələn, 123 → 1 × 2 × 3 = 6.
+
+
+
+
+#9. Verilmiş rəqəmlər aralığında tam kvadratlar tapmaq
+Təsvir: Verilmiş iki rəqəm arasında olan tam kvadratları tapın. Məsələn, 1-dən 100-ə qədər tam kvadratlar: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.
+
+
+
+
+
+
+#10. Piramida şəkilli çıxış
+Təsvir: Bir piramida şəklində nömrələri çap edin. Verilən N səviyyəsində hər bir səviyyədə ardıcıl olaraq nömrələr çap olunsun.
+
+
+
+
+
+#11. Palindrome ədədlərini tapmaq
+Təsvir: Verilən bir aralıqda olan palindrome ədədləri tapın (yəni, tərsinə oxunduqda da eyni olan rəqəmlər). Məsələn, 121, 131, 999.
+
+
+
+
+#12. Verilən bir aralıqda cüt və tək ədədləri ayrı-ayrı çap etmək
+Təsvir: Verilən aralıqda olan cüt və tək ədədləri ayrıca çap edin.
+
+
+
+

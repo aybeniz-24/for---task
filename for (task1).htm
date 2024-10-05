@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rəqəmlərin Tərsi</title>
+    </head>
+    <body>
+        <input id="inp" type="number" />
+        <p id="ntc"></p>
+
+        <script>
+            function go() {
+                const inpVAl = document.querySelector("#inp").value
+
+                let reversed = 0
+
+                for (let i = inpVAl; i > 0; i = Math.floor(i / 10)) {
+                    reversed = reversed * 10 + (i % 10)
+                }
+                document.querySelector("#ntc").innerHTML = `Ters: ${reversed}`
+            }
+
+            document.querySelector("#inp").addEventListener("input", go)
+        </script>
+    </body>
+</html>

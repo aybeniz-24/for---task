@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cüt və tək ədədləri ayrı-ayrı çap etmək</title>
+    </head>
+    <body>
+        <input type="number" id="a" placeholder="1-ci eded" />
+        <input type="number" id="b" placeholder="2-ci eded" />
+
+        <p id="tek">Tek ededler:</p>
+        <p id="cut">Cut ededler:</p>
+
+        <script>
+            function go(){
+                const a = document.querySelector("#a").value
+                const b = document.querySelector("#b").value
+                const tek = document.querySelector("#tek")
+                const cut = document.querySelector("#cut")
+
+                tek.innerHTML = 'Tek eded: '
+                cut.innerHTML = 'Cut eded: '
+
+                for (let i = a; i <= b; i++) {
+                    if ( i % 2 === 0 ) {
+                        cut.innerHTML += i + ', '
+                    }else{
+                        tek.innerHTML += i + ', '
+                    }
+                }
+            }
+
+           document.querySelector("#a").addEventListener('input', go)
+           document.querySelector("#b").addEventListener('input', go)
+        </script>
+    </body>
+</html>

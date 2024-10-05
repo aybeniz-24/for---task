@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>1-dən N-ə qədər olan ədədlərin cəmini tapmaq</title>
+    </head>
+    <body>
+        <input type="number" id="inp" placeholder="eded daxil edin" />
+        <p id="ntc">Cem: </p>
+
+        <script>
+            function go(){
+                const n = parseInt(document.querySelector("#inp").value)
+                let cem = 0
+
+            for (let i = 1; i <= n; i++) {
+                cem += i
+            }
+
+            document.querySelector("#ntc").innerHTML = "Cem: " + cem
+
+            }
+            document.querySelector("#inp").addEventListener('input', go)
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Piramida şəkilli çıxış</title>
+        <style>
+            input {
+                display: block;
+                width: 60px;
+                margin: 20px auto;
+            }
+            p {
+                text-align: center;
+                white-space: pre-line; 
+            }
+        </style>
+    </head>
+    <body>
+        <input type="number" id="inp" placeholder="eded" />
+        <p id="ntc"></p>
+
+        <script>
+           function go() {
+                const inpVal = parseInt(document.querySelector("#inp").value)
+                let cixis = ''
+
+                for (let i = 1; i <= inpVal; i++) {
+                    let row = ''
+                    for (let j = 1; j <= i; j++) {
+                        row += j + ' '
+                    }
+                    cixis += row + '\n'
+                }
+
+                document.querySelector("#ntc").innerHTML = cixis;
+           }
+
+           document.querySelector("#inp").addEventListener('input', go);    
+        </script>
+    </body>
+</html>

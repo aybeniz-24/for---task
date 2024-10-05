@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Palindrome ədədlərini tapmaq</title>
+    </head>
+    <body>
+        <input type="number" id="inp" placeholder="eded daxil edin" />  
+        <p id="ntc"></p>    
+    
+        <script>
+           function go(){
+            const inpVal = parseInt(document.querySelector("#inp").value)
+            document.querySelector("#ntc").innerHTML = ''
+            for (let i = 100; i <= inpVal; i++) {
+                let str = i.toString()
+                let reversedStr = str.split('').reverse().join('')
+                if( str === reversedStr ){
+                    document.querySelector("#ntc").innerHTML = i + " Palindrome ədəddir"
+                }else{
+                    document.querySelector("#ntc").innerHTML = i + " Palindrome ədəd deyil"
+                }
+                
+            }
+           }
+
+           document.querySelector("#inp").addEventListener("input",  go)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> İkilik Sisteminə Keçid </title>
+    </head>
+    <body>
+        <input id="inp" type="number" />
+        <button onclick="go()">İkilik Sisteminə Keç</button>
+        <p id="ntc">İkilik say sistemindeki eded: </p>
+
+        <script>
+           function go(){
+            const inpVal = parseInt(document.querySelector('#inp').value)
+
+                if( isNaN(inpVal) || inpVal < 0){
+                    document.querySelector("#ntc").innerHTML += " Zəhmət olmasa, müsbət bir ədəd daxil edin."
+                    return
+                }
+
+                let binar = ''
+                let n = inpVal
+
+                for (let i = n; i > 0; i = Math.floor( i / 2)) {
+                    binar = ( i % 2 )  + binar
+                }
+               
+                document.querySelector("#ntc").innerHTML += ' ' + binar
+           }
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bir rəqəmin rəqəmlərinin hasilini tapmaq</title>
+    </head>
+    <body>
+        <input type="number" id="inp" placeholder="eded daxil edin" />
+        <p id="ntc">Netice:</p>
+
+        <script>
+            
+            function go(){
+                const inpVal = document.querySelector("#inp").value
+                let a = 1
+                for (let i = 0; i < inpVal.length; i++) {
+                    let reqem = parseInt(inpVal[i])
+                    a *= reqem
+                }
+                document.querySelector("#ntc").innerHTML = 'Netice:' + a
+            }
+
+            document.querySelector("#inp").addEventListener('input', go)
+        </script>
+        
+    </body>
+</html>
